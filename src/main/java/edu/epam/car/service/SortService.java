@@ -1,7 +1,7 @@
-package edu.epam.cardao.service;
+package edu.epam.car.service;
 
-import edu.epam.cardao.entity.Car;
-import edu.epam.cardao.entity.CarShop;
+import edu.epam.car.entity.Car;
+import edu.epam.car.entity.CarShop;
 
 import java.util.Comparator;
 import java.util.List;

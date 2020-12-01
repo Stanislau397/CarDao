@@ -1,4 +1,4 @@
-package edu.epam.cardao.entity;
+package edu.epam.car.entity;
 
 public enum  Color {
     BLACK, WHITE, RED, YELLOW,

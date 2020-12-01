@@ -1,4 +1,4 @@
-package edu.epam.cardao.entity;
+package edu.epam.car.entity;
 
 import java.math.BigDecimal;
 

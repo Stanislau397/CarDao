@@ -1,9 +1,9 @@
-package edu.epam.cardao.service;
+package edu.epam.car.service;
 
-import edu.epam.cardao.entity.Brand;
-import edu.epam.cardao.entity.Car;
-import edu.epam.cardao.entity.CarShop;
-import edu.epam.cardao.entity.Color;
+import edu.epam.car.entity.Brand;
+import edu.epam.car.entity.Car;
+import edu.epam.car.entity.CarShop;
+import edu.epam.car.entity.Color;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
