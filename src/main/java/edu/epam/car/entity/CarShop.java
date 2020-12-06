@@ -28,7 +28,6 @@ public class CarShop {
     }
 
     public List<Car> getCars() {
-        List<Car> carList = new ArrayList<>(cars);
-        return carList;
+        return new ArrayList<>(cars);
     }
 }

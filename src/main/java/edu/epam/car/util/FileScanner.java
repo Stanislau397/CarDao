@@ -16,7 +16,7 @@ public class FileScanner {
 
     private static final Logger logger = LogManager.getLogger(FileScanner.class);
 
-    public List<Car> readFile(String path) {
+    public List<Car> readCarsFromFile(String path) {
         List<Car> cars = new ArrayList<>();
 
         try (Scanner scanner = new Scanner(new FileReader(path))) {

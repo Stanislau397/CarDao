@@ -1,17 +1,17 @@
 package edu.epam.car.dao;
 
 import edu.epam.car.entity.Car;
-import edu.epam.car.entity.CarShop;
+import edu.epam.car.exception.DaoException;
 
 import java.util.List;
 
-public interface BaseDao<K, T extends Car, V extends CarShop> {
+public interface BaseDao<K, T extends Car> {
 
-    List<T> findAllCarsInShop(V v);
+    List<T> findAll() throws DaoException;
 
-    boolean addCarToShop(T t, V v);
+    void add(T t) throws DaoException;
 
-    boolean deleteCarFromShop(T t, V v);
+    void delete(T t) throws DaoException;
 
-    T updateCarId(T t, K k);
+    T updateId(T t, K k) throws DaoException;
 }

@@ -3,6 +3,7 @@ package edu.epam.car.exception;
 public class DaoException extends Exception {
 
     public DaoException() {
+
     }
 
     public DaoException(String message) {

@@ -1,42 +1,23 @@
 package edu.epam.car.service;
 
-import edu.epam.car.dao.impl.CarDaoImpl;
 import edu.epam.car.entity.Car;
-import edu.epam.car.entity.CarShop;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-public class CarService {
+public interface CarService {
 
-    private CarDaoImpl carDaoImpl = new CarDaoImpl();
+    void addCar(Car car);
 
-    public boolean addCarToShop(Car car, CarShop carShop) {
-        return carDaoImpl.addCarToShop(car, carShop);
-    }
+    void removeCar(Car car);
 
-    public List<Car> findCarByYear(int year, CarShop carShop) {
-        return carDaoImpl.findCarByYear(year, carShop);
-    }
+    List<Car> findAllCars();
 
-    public List<Car> findCarByPrice(BigDecimal price, CarShop carShop) {
-        return carDaoImpl.findCarByPrice(price, carShop);
-    }
+    Car updateCarId(Car car, Long otherId);
 
-    public List<Car> findCarByModel(String model, CarShop carShop) {
-        return carDaoImpl.findCarByModel(model, carShop);
-    }
+    List<Car> findCarByYear(int year);
 
-    public List<Car> findAllCarsInShop(CarShop carShop) {
-        return carDaoImpl.findAllCarsInShop(carShop);
-    }
+    List<Car> findCarByModel(String model);
 
-
-    public boolean deleteCarFromShop(Car car, CarShop carShop) {
-        return carDaoImpl.deleteCarFromShop(car, carShop);
-    }
-
-    public Car updateCarID(Car car, Long otherId) {
-        return carDaoImpl.updateCarId(car, otherId);
-    }
+    List<Car> findCarByPrice(BigDecimal price);
 }
