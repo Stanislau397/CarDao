@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class FileScanner {
 
-    private static final Logger logger = LogManager.getLogger(FileScanner.class);
+    public static final Logger logger = LogManager.getLogger(FileScanner.class);
 
     public List<Car> readCarsFromFile(String path) {
         List<Car> cars = new ArrayList<>();

@@ -15,7 +15,7 @@ import java.util.List;
 
 public class CarServiceImpl implements CarService {
 
-    private static final Logger logger = LogManager.getLogger(CarServiceImpl.class);
+    public static final Logger logger = LogManager.getLogger(CarServiceImpl.class);
     private CarDao carDao;
 
     public CarServiceImpl() {
